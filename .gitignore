@@ -19,7 +19,16 @@ env/
 # Model and embedding files
 *.pt
 *.bin
-*.onnx
+# Ignore environment variables and secrets
+.env
+# Ignore Python cache
+__pycache__/
+*.pyc
+# Ignore virtual environment
+venv/
+# Ignore FAISS index and other generated files
+embeddings/*.faiss
+embeddings/*.pkl
 *.faiss
 *.json
 
